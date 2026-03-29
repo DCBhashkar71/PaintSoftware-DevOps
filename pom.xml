@@ -6,7 +6,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.vit.devops</groupId>
-    <artifactId>PaintSoftware</artifactId>
+    <artifactId>paintsoftware</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>Paint Software</name>
@@ -29,13 +29,25 @@
 
     <build>
         <plugins>
-            <!-- Plugin to run JUnit 5 tests -->
+            <!-- Maven Compiler Plugin for JDK 25 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>25</source>
+                    <target>25</target>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire to run JUnit 5 tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version>
+                <version>3.2.5</version>
             </plugin>
-            <!-- Plugin to create executable JAR -->
+
+            <!-- Create executable JAR -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -43,7 +55,9 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>paint.Main</mainClass>
+                            <mainClass>
+                                com.vit.devops.paintsoftware.Main
+                            </mainClass>
                         </manifest>
                     </archive>
                 </configuration>

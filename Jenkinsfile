@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.9'
+        maven 'Maven_3.9.12'
         jdk   'JDK_25'
     }
 
@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/DCBhashkar71/PaintSoftware-DevOps.git'
+                    url: 'https://github.com/<your-username>/PaintSoftware-DevOps.git'
             }
         }
 
