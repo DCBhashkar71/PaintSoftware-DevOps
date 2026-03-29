@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'paint-app'
+    static_configs:
+      - targets: ['paint-app:8080']
