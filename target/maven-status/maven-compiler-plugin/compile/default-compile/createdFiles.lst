@@ -1,0 +1,13 @@
+com\vit\devops\paintsoftware\Rectangle.class
+com\vit\devops\paintsoftware\Window.class
+com\vit\devops\paintsoftware\DataController.class
+com\vit\devops\paintsoftware\Event.class
+com\vit\devops\paintsoftware\Point.class
+com\vit\devops\paintsoftware\Frame.class
+com\vit\devops\paintsoftware\Polygon.class
+com\vit\devops\paintsoftware\Circle.class
+com\vit\devops\paintsoftware\DrawingContext.class
+com\vit\devops\paintsoftware\ConsoleWindow.class
+com\vit\devops\paintsoftware\PaintSoftware.class
+com\vit\devops\paintsoftware\Shape.class
+com\vit\devops\paintsoftware\DialogBox.class
